@@ -12,7 +12,7 @@ const StyledApp = styled.div`
     padding: 24px;
     border-radius: 12px;
     background: #deb887;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
     user-select: none;
 
     .app-name-title {
