@@ -21,7 +21,11 @@ const App = () => {
       newArrNumber.sort((a, b) => a - b);
       setListNumber(newArrNumber);
     }
-    rollNumber();
+    for (let i = 0; i < 40; i++) {
+      setTimeout(() => {
+        rollNumber();
+      }, i * 100); // Delay increases with each iteration
+    }
   }
 
   return (

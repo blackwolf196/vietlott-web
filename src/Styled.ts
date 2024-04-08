@@ -6,63 +6,69 @@ const StyledApp = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 320px;
 
   .main-container {
     border: solid 1px #ccc;
-    padding: 24px;
+    padding: 12px;
     border-radius: 12px;
     background: #deb887;
     box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
     user-select: none;
+    max-width: 80%;
+    transition: all 0.3s;
+
+    @media (min-width: 420px) {
+      max-width: 90%;
+    }
+
+    @media (min-width: 768px) {
+      padding: 24px;
+    }
 
     .app-name-title {
-      font-size: 64px;
+      font-size: 48px;
       font-weight: 600;
       color: #FC000C;
       text-transform: uppercase;
       margin-bottom: 32px;
       text-align: center;
+
+      @media (min-width: 768px) {
+        font-size: 64px;
+      }
     }
 
     .box-container {
       display: flex;
 
       .box-number {
-        width: 64px;
-        height: 64px;
+        width: 32px;
+        height: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-inline: 24px;
-        font-size: 24px;
+        margin-inline: 12px;
+        font-size: 18px;
         font-weight: bold;
         transition: all 0.5s ease-in-out;
-      }
 
-      .box-number-enter {
-        transform: translateY(-100%);
-      }
-
-      .box-number-enter-active {
-        transform: translateY(0);
-      }
-
-      .box-number-exit {
-        transform: translateY(0);
-      }
-
-      .box-number-exit-active {
-        transform: translateY(100%);
+        @media (min-width: 768px) {
+          width: 64px;
+          height: 64px;
+          font-size: 24px;
+          margin-inline: 24px;
+        }
       }
     }
   }
-  
+
   .btn-wrapper {
     display: flex;
     justify-content: center;
     margin-top: 24px;
   }
-  
+
   .btn-roll {
     align-items: center;
     background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
@@ -92,11 +98,11 @@ const StyledApp = styled.div`
     &:active {
       outline: 0;
     }
-    
+
     &:focus {
       outline: 0;
     }
-    
+
     &:hover {
       outline: 0;
 
