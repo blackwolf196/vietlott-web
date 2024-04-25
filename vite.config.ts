@@ -7,7 +7,9 @@ export default defineConfig({
   resolve: {
     alias: {
       src: "/src",
-      pages: "/src/pages"
+      pages: "/src/pages",
+      hooks: "/src/hooks",
+      helper: "/src/helper"
     },
   }
 })

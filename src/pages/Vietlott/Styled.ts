@@ -33,6 +33,7 @@ const StyledApp = styled.div`
       text-transform: uppercase;
       margin-bottom: 32px;
       text-align: center;
+      font-family: "Outfit", sans-serif;
 
       @media (min-width: 768px) {
         font-size: 64px;

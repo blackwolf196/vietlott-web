@@ -22,6 +22,8 @@
     "baseUrl": ".",
     "paths": {
       "pages/*": ["./src/pages/*"],
+      "hooks/*": ["./src/hooks/*"],
+      "helper/*": ["./src/helper/*"]
     }
   },
   "include": ["src"],

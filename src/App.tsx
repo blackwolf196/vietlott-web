@@ -1,14 +1,13 @@
-import { Routes, Route } from 'react-router-dom'
-import Vietlott from 'pages/Vietlott';
+import GlobalStyled from "./GlobalStyled.tsx";
+import AppRouter from "./AppRouter.tsx";
 
 const App = () => {
 
   return (
-   <>
-     <Routes>
-       <Route path='/vietlott' element={<Vietlott />} />
-     </Routes>
-   </>
+    <>
+      <GlobalStyled/>
+      <AppRouter/>
+    </>
   )
 }
 
