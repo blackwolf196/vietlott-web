@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
 import {lazy} from "react";
 
 const Vietlott = lazy(() => import('pages/Vietlott'));
@@ -6,7 +6,9 @@ const Vietlott = lazy(() => import('pages/Vietlott'));
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path='/vietlott' element={<Vietlott />} />
+      <Route path="/" element={<Navigate to="/vietlott" replace />}/>
+      <Route path='/vietlott' element={<Vietlott/>}/>
+      <Route path="*" element={<Navigate to="/vietlott" replace />}/>
     </Routes>
   )
 }

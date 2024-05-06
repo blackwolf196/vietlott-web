@@ -37,5 +37,7 @@ const ModalHistory = (props: ModalInterface) => {
 export default ModalHistory;
 
 const ModalStyled = styled(Modal)`
-
+  .ant-empty {
+    opacity: 0.4;
+  }
 `;
